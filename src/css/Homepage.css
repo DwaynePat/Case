@@ -112,17 +112,6 @@ body {
   background-position: 0 0;
 }
 
-/* Responsive Layout */
-@media screen and (min-width: 992px) {
-  .wrapper {
-    gap: 10px;
-  }
-  .container {
-    height: 400px;
-    width: 300px;
-    padding: 15px;
-  }
-}
 
 a {
   text-decoration: none;
@@ -150,4 +139,110 @@ a {
   background-color: #1e202b;
   color: #90d200;
   cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .year-2024 {
+    font-size: 300px;
+    top: -100px;
+    left: -100px;
+  }
+
+  .background-layer {
+    width: 1000px;
+    height: 1100px;
+    top: -200px;
+    left: -250px;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .container {
+    width: 220px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .year-2024 {
+    font-size: 250px;
+    top: -50px;
+    left: -50px;
+  }
+
+  .background-layer {
+    width: 800px;
+    height: 900px;
+    top: -150px;
+    left: -150px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container {
+    width: 200px;
+    height: 250px;
+  }
+
+  .back-button {
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .year-2024 {
+    font-size: 180px;
+    top: -30px;
+    left: 5px;
+  }
+
+  .background-layer {
+    width: 600px;
+    height: 700px;
+    top: 50px;
+    left: -75px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    width: 180px;
+    height: 230px;
+  }
+
+  .back-button {
+    top: 5px;
+    left: 5px;
+    padding: 6px 12px;
+    font-size: 20px;
+  }
 }

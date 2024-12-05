@@ -165,7 +165,8 @@ body {
   .vote-label {
       font-size: 16px; /* Slightly smaller font for smaller screens */
       padding: 12px 24px; /* Adjust padding */
-      letter-spacing: 1.5px; /* Adjust letter spacing */
+      letter-spacing: 1.5px;
+       /* Adjust letter spacing */
   }
 
   .content {
@@ -207,9 +208,11 @@ body {
 /* Mobile Design */
 @media (max-width: 480px) {
   .vote-label {
+      text-align: center;
       font-size: 12px; /* Smallest font size */
       padding: 6px 12px; /* Further reduce padding */
       letter-spacing: 1px; /* Further adjust letter-spacing */
+      width: 100%;
   }
 
   .candidate-details h2 {
@@ -225,7 +228,7 @@ body {
   }
 
   .back-button {
-    font-size: 24px; /* Larger font for mobile for better visibility */
+    font-size: 10px; /* Larger font for mobile for better visibility */
     padding: 16px 32px; /* Larger padding */
     top: 5px; /* Adjust vertical positioning */
     left: 5px; /* Adjust horizontal positioning */
